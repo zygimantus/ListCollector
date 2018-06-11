@@ -4,7 +4,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.control.MenuBar?>
 
-<MenuBar xmlns:fx="http://javafx.com/fxml/1" id="menuBar" 
+<MenuBar xmlns:fx="http://javafx.com/fxml/1" fx:id="menuBar" 
          focusTraversable="true" 
          fx:controller="com.zygimantus.listcollector.MenuController">  
     <menus>  
@@ -15,6 +15,12 @@
                 <MenuItem text="Save As"/>  
                 <SeparatorMenuItem  />  
                 <MenuItem text="Exit" onAction="#processExit" />  
+            </items>  
+        </Menu>  
+        <Menu text="Lists">  
+            <items>  
+                <MenuItem text="New Book List" onAction="#newBooksList" />
+                <MenuItem text="New Movie List" onAction="#newMoviesList" />
             </items>  
         </Menu>  
         <Menu text="JavaFX 2.0 Examples">  
